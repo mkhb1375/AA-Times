@@ -1,0 +1,51 @@
+.sections_nav{
+    
+    border-bottom: 1px solid $light-gray;
+    display: flex;
+    justify-content: center;
+
+	 ul{
+    
+        display: flex;
+        
+        padding: 10px 0;
+    
+     }
+        li{
+           margin: 0 10px;
+           
+            font-family: $sans-serif;
+            cursor: pointer;
+        }
+
+        a{
+            font-size: 12px;
+            
+        }
+
+        li:hover{
+            background: $light-gray;
+        }
+    }
+    
+
+    @media all and (max-width:1000px){
+        .sections_nav{
+            display: none;
+        }
+        .language-nav{
+            display:none;
+        }
+        .right-nav >ul >li > button{
+            display: none;
+        }
+        
+        #search-modal-btn{
+            margin-left: 0;
+        }
+        #sections-sidebar-btn{
+            margin-left: 0;
+        }
+      }
+
+
